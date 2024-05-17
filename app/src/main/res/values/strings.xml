@@ -1,0 +1,34 @@
+<resources>
+    <string name="logo_descripton">App FinanFácil</string>
+    <string name="saldo">Saldo</string>
+    <string name="qtd_saldo">R$ 3.500,00</string>
+    <string name="historico">Histórico</string>
+    <string name="des_historico">Botão de histórico</string>
+    <string name="categoria">Categorias</string>
+    <string name="des_categoria">Botão de categoria</string>
+    <string name="registrar">Registrar</string>
+    <string name="des_registrar">Botão de registrar</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="des_dashboard">Botão de dashboard</string>
+    <string name="despesas_por_categoria">Despesas por categoria</string>
+    <string name="receita">Receita</string>
+    <string name="qtd_receita">R$ 3.500,00</string>
+    <string name="despesa">Despesa</string>
+    <string name="qtd_despesa">R$ 1.200,00</string>
+    <string name="des_img_receita">Receita</string>
+    <string name="des_img_despesas">Despesa</string>
+    <string name="categoria">Categoria</string>
+    <string name="alimentacao">Alimentação</string>
+    <string name="moradia">Moradia</string>
+    <string name="transporte">Transporte</string>
+    <string name="lazer">Lazer</string>
+
+
+
+
+
+
+
+
+
+</resources>
