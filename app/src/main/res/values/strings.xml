@@ -22,13 +22,8 @@
     <string name="moradia">Moradia</string>
     <string name="transporte">Transporte</string>
     <string name="lazer">Lazer</string>
-
-
-
-
-
-
-
-
-
+    <string name="nova_categoria">Criar nova categoria</string>
+    <string name="nome">Nome</string>
+    <string name="descrição">Descrição</string>
+    <string name="orçamento">Orçamento</string>
 </resources>

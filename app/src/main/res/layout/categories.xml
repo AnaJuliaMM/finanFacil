@@ -14,7 +14,7 @@
         android:background="@android:color/transparent"
         android:contentDescription="Botão de retornar para a tela anterior"
         android:src="@drawable/ic_back"
-        app:layout_constraintStart_toStartOf="" Of="parent"
+        app:layout_constraintStart_toStartOf=""
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -36,8 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginEnd="70dp"
         android:layout_marginTop="53dp"
+        android:layout_marginEnd="70dp"
         app:columnCount="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,10 +50,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            app:layout_column="0"
-            app:layout_row="0"
             android:paddingBottom="22dp"
-            >
+            app:layout_column="0"
+            app:layout_row="0">
 
 
             <ImageView
@@ -62,8 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
-                android:src="@drawable/color_alimentacao"
-                />
+                android:src="@drawable/color_alimentacao" />
 
             <TextView
                 android:id="@+id/alimentacao_label"
@@ -80,9 +78,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
+            android:paddingBottom="22dp"
             app:layout_column="1"
-            app:layout_row="0"
-            android:paddingBottom="22dp">
+            app:layout_row="0">
 
             <ImageView
                 android:id="@+id/imageView8"
@@ -156,11 +154,58 @@
 
     </androidx.gridlayout.widget.GridLayout>
 
-    <androidx.cardview.widget.CardView
-        Of="parent"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/categorias" />
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/card_rounded_forms"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="28dp"
+        android:paddingRight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categorias">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:text="@string/nova_categoria"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="47dp"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/nome" />
+
+        <EditText
+            android:id="@+id/input_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="47dp"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/descrição" />
+
+        <EditText
+            android:id="@+id/input_orçamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/orçamento" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
