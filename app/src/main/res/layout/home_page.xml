@@ -200,7 +200,7 @@
                 android:id="@+id/categoria_text"
                 android:layout_width="74dp"
                 android:layout_height="wrap_content"
-                android:text="@string/categoria"
+                android:text="@string/categorias"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="14sp"
