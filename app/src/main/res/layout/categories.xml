@@ -183,6 +183,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="47dp"
             android:background="@drawable/input"
+            android:drawableStart="@drawable/ic_nome"
+            android:drawablePadding="14dp"
             android:ems="10"
             android:inputType="text"
             android:text="@string/nome" />
@@ -193,6 +195,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="47dp"
             android:background="@drawable/input"
+            android:drawableStart="@drawable/ic_description"
+            android:drawablePadding="14dp"
             android:ems="10"
             android:inputType="text"
             android:text="@string/descrição" />
@@ -202,6 +206,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/input"
+            android:drawableStart="@drawable/ic_orcamento"
+            android:drawablePadding="14dp"
             android:ems="10"
             android:inputType="text"
             android:text="@string/orçamento" />
