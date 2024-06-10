@@ -9,12 +9,13 @@
 
     <ImageButton
         android:id="@+id/btn_back"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
         android:background="@android:color/transparent"
         android:contentDescription="Botão de retornar para a tela anterior"
         android:src="@drawable/ic_back"
-        app:layout_constraintStart_toStartOf="" Of="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -22,26 +23,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/categoria"
+        android:text="@string/categorias"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="26dp" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/categorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="60dp"
         app:columnCount="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_back"
+        app:layout_constraintTop_toBottomOf="@+id/title"
         app:rowCount="2">
 
 
@@ -50,20 +50,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
+            android:paddingBottom="20dp"
             app:layout_column="0"
-            app:layout_row="0"
-            android:paddingBottom="22dp"
-            >
+            app:layout_row="0">
 
 
             <ImageView
                 android:id="@+id/color_alimentacao"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
-                android:src="@drawable/color_alimentacao"
-                />
+                android:src="@drawable/color_alimentacao" />
 
             <TextView
                 android:id="@+id/alimentacao_label"
@@ -72,7 +70,7 @@
                 android:layout_weight="1"
                 android:text="@string/alimentacao"
                 android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -80,14 +78,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
+            android:paddingBottom="20dp"
             app:layout_column="1"
-            app:layout_row="0"
-            android:paddingBottom="22dp">
+            app:layout_row="0">
 
             <ImageView
                 android:id="@+id/imageView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:src="@drawable/color_transporte" />
@@ -99,7 +97,7 @@
                 android:layout_weight="1"
                 android:text="@string/transporte"
                 android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -112,8 +110,8 @@
 
             <ImageView
                 android:id="@+id/imageView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:src="@drawable/color_moradia" />
@@ -125,7 +123,7 @@
                 android:layout_weight="1"
                 android:text="@string/moradia"
                 android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -138,8 +136,8 @@
 
             <ImageView
                 android:id="@+id/imageView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:src="@drawable/lazer_color" />
@@ -151,16 +149,159 @@
                 android:layout_weight="1"
                 android:text="@string/lazer"
                 android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:textSize="16sp" />
         </LinearLayout>
 
     </androidx.gridlayout.widget.GridLayout>
 
-    <androidx.cardview.widget.CardView
-        Of="parent"
+    <LinearLayout
+        android:id="@+id/categorias_formulario"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/categorias" />
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/card_rounded_forms"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="28dp"
+        android:paddingRight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categorias">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:text="@string/nova_categoria"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/input"
+            android:drawableStart="@drawable/ic_nome"
+            android:drawablePadding="14dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/nome" />
+
+        <EditText
+            android:id="@+id/input_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/input"
+            android:drawableStart="@drawable/ic_description"
+            android:drawablePadding="14dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/descrição" />
+
+        <EditText
+            android:id="@+id/input_orçamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/input"
+            android:drawableStart="@drawable/ic_orcamento"
+            android:drawablePadding="14dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/orçamento" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/input_cor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_cor"
+                android:drawablePadding="14dp"
+                android:text="@string/cor"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/yellow"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/gray"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/green"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/marsala"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/purple"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/cyan"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="27dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_add"
+            app:layout_constraintTop_toBottomOf="@+id/categorias_formulario" />
+    </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
