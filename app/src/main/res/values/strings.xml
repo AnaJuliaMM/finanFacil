@@ -27,4 +27,6 @@
     <string name="descrição">Descrição</string>
     <string name="orçamento">Orçamento</string>
     <string name="cor">Cor</string>
+    <string name="registrar">Registrar</string>
+    <string name="receita_despesa">Receita/Despesa</string>
 </resources>
