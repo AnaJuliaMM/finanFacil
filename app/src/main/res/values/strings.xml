@@ -27,6 +27,7 @@
     <string name="descrição">Descrição</string>
     <string name="orçamento">Orçamento</string>
     <string name="cor">Cor</string>
-    <string name="registrar">Registrar</string>
     <string name="receita_despesa">Receita/Despesa</string>
+    <string name="value">Valor</string>
+    <string name="zerado">R$0,00</string>
 </resources>
