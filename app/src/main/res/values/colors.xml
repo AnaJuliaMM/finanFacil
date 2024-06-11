@@ -6,12 +6,4 @@
     <color name="light_red">#E7A29E</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <color name="yellow">#FFFF00</color>
-    <color name="gray">#CFCFCF</color>
-    <color name="green">#5A9832</color>
-    <color name="marsala">#A52A2A</color>
-    <color name="purple">#800080</color>
-    <color name="cyan">#00FFFF</color>
-
 </resources>
