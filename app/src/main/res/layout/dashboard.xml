@@ -156,6 +156,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/dica_negrito"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -165,6 +166,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/dica"
+                    android:textColor="@color/black"
                     android:textSize="18sp" />
             </LinearLayout>
 
