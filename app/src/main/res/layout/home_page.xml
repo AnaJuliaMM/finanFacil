@@ -66,7 +66,7 @@
                     android:id="@+id/receita"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:contentDescription="@string/des_img_receita"
                     android:src="@drawable/ic_receita" />
 
@@ -74,7 +74,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -92,7 +93,7 @@
                         android:gravity="center"
                         android:text="@string/qtd_receita"
                         android:textColor="@color/light_green"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -106,7 +107,7 @@
                     android:id="@+id/despesa"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:contentDescription="@string/des_img_despesas"
                     android:src="@drawable/ic_despesa" />
 
@@ -114,7 +115,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -130,7 +132,7 @@
                         android:gravity="center"
                         android:text="@string/qtd_despesa"
                         android:textColor="@color/light_red"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -276,7 +278,7 @@
         android:contentDescription="@string/des_categoria"
         android:text="@string/despesas_por_categoria"
         android:textColor="@color/black"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -295,14 +297,16 @@
         android:layout_marginBottom="13dp"
         android:text="@string/historico"
         android:textColor="@color/black"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="195dp"
         android:background="@drawable/card_rounded_background"
-        android:orientation="vertical"></LinearLayout>
+        android:orientation="vertical">
+
+    </LinearLayout>
 
 
 </LinearLayout>

@@ -34,7 +34,13 @@
     <string name="comparacao_gastos">Comparação gastos</string>
     <string name="dica_negrito">Evite compras impulsivas!</string>
     <string name="dica">Pergunte-se: Eu realmente preciso disso?</string>
-
+    <string name="botao_retorno_des">Botão de retornar para a tela anterior</string>
+    <string name="cinza">cinza</string>
+    <string name="pink">rosa</string>
+    <string name="roxo">roxo</string>
+    <string name="amarelo">amarelo</string>
+    <string name="btn_ad_categoria_des">Botão para adicionar categoria</string>
+    <string name="dashboard_money_Img">Imagem de dinheiro</string>
 
 
 </resources>
